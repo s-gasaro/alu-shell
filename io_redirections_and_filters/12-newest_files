@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -t1 | head 
+ls -lt | grep '^-' | head -10 | while read line; do echo "$line" | cut -d' ' -f9; done
