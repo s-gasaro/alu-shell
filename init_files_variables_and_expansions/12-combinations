@@ -1,2 +1,2 @@
 #!/bin/bash
-for i in range(26): [print(chr(i+97)+chr(j+97)) for j in range(26) if not(i==14 and j==14)]
+for i in {a..z} for j in {a..z} do [ $i$j != oo ] && echo $i$j done
