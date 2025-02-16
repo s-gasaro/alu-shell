@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
-#using until script  for printing 10 best schools
-until [ $count -gt 10 ]
-do
-	echo "Best School"
-	count=$((count + 1))
+#a Bash script that displays Best School 10 times, but for the 9th iteration, displays Best School and then Hi on a new line.
+n=1
+until [ $n -gt 10 ]
+do 
+  echo "Best School"
+  ((n++))
 done
