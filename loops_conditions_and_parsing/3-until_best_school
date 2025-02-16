@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#using until script  for printing 10 best schools
+until [ $count -gt 10 ]
+do
+	echo "Best School"
+	count=$((count + 1))
+done
